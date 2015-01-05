@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+ 	    <meta charset="utf-8">
+ 	    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <title>嘀咕网 - 收集高清唯美图片，分享你所爱，结识心朋友</title>
+        <link rel="shortcut icon" href="images/title.png"/>
+    </head>
+    <body>
+    	<div class="header">
+    		<div class="logo"></div>
+    		<div class="head-right">
+                <form class="head-right4">
+                    <input type="text" value="猜你喜欢" class="search"/>
+                </form>
+    			<div class="head-right3">
+                    <a href="http://www.digu.com/signup"></a>
+                </div>
+                <div class="head-right2">
+                    <a href="http://www.digu.com/reg/sns"></a>
+                </div>
+                <div class="head-right1">
+                    <a href="http://www.digu.com/sys/about"></a>
+                </div>
+    		</div>
+    	</div>
+        <div id="advertisement" onmouseout="disappear()" onmouseover="appear()">
+            <ul id="adverf" onmouseout="run()" onmouseover="stoptimer()">
+                <li>
+                    <img src="images/head1.jpg" class="adver-pic" />
+                </li>
+                <li>
+                    <img src="images/head2.jpg" class="adver-pic"/>
+                </li>
+                <li>
+                    <img src="images/head3.jpg" class="adver-pic"/>
+                </li>
+                <li>
+                    <img src="images/head4.jpg" class="adver-pic"/>
+                </li>
+                <li>
+                    <img src="images/head5.jpg" class="adver-pic"/>
+                </li>
+            </ul>
+            <ol id="advers">
+                <li class="out" title="第1页" onclick="switches(this)"></li>
+                <li class="out" title="第2页" onclick="switches(this)"></li>
+                <li class="out" title="第3页" onclick="switches(this)"></li>
+                <li class="out" title="第4页" onclick="switches(this)"></li>
+                <li class="out" title="第5页" onclick="switches(this)"></li>
+            </ol>
+            <a href="javascript:;" id="arrleft" onclick="move(-1)"></a>
+            <a href="javascript:;" id="arrright" onclick="move(1)"></a>
+        </div>
+    	<div class="container">
+            <div class="list-left">
+                <div class="conbox">
+                    <div class="content">
+                        <img src="images/con1.png" class="qq"><br/>
+                        <a class="con1">商务合作联系 QQ：3087941781</a>
+                        <div class="blank"></div>
+                        <a href="http://www.digu.com/sequare/hot" class="all">全部</a>
+                        <p>
+                            <a href="http://www.digu.com/sequare/hot/22718/22718" class="eall" id="all1">发型</a>
+                            <a href="http://www.digu.com/sequare/hot/26498/26498" class="eall" id="all2">手工DIY</a>
+                            <a href="http://www.digu.com/sequare/hot/145969/145969" class="eall" id="all3">装修设计</a>
+                            <a href="http://www.digu.com/sequare/hot/257794/257794" class="eall" id="all4">宠物动物</a>
+                            <a href="http://www.digu.com/sequare/hot/255780/255780" class="eall" id="all5">植物/花卉</a>
+                            <a href="http://www.digu.com/sequare/hot/84641/84641" class="eall" id="all6">旅行风景</a>
+                            <a href="http://www.digu.com/sequare/hot/84652/84652" class="eall" id="all7">美食菜谱</a>
+                            <a href="http://www.digu.com/sequare/hot/84670/84670" class="eall" id="all8">插画手绘</a>
+                            <a href="http://www.digu.com/sequare/hot/84680/84680" class="eall" id="all9">美妆造型</a>
+                            <a href="http://www.digu.com/sequare/hot/84743/84743" class="eall" id="all10">婚纱婚礼</a>
+                            <a href="http://www.digu.com/sequare/hot/1016/1016" class="eall" id="all11">恋物</a>
+                            <a href="http://www.digu.com/sequare/hot/84776/84776" class="eall" id="all12">人物明星</a>
+                            <a href="http://www.digu.com/sequare/hot/292610/292610" class="eall" id="all13">文化艺术</a>
+                            <a href="http://www.digu.com/sequare/hot/257805/257805" class="eall" id="all14">影视动漫</a>
+                            <a href="http://www.digu.com/sequare/hot/1013/1013" class="eall" id="all15">摄影</a>
+                            <a href="http://www.digu.com/sequare/hot/1000/1000" class="eall" id="all16">建筑</a>
+                            <br/>
+                            <a href="http://www.digu.com/sequare/hot/1009/1009" class="eall" id="all17">童真</a>
+                            <a href="http://www.digu.com/sequare/hot/16324/16324" class="eall" id="all18">搞笑</a>
+                        </p>
+                        <div class="blank"></div>
+                        <p class="hot">达人标签</p>
+                        <p>
+                            <a href="http://www.digu.com/tags/hot/34119" class="hot2">cosplay<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/32193" class="hot2">玉石<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/1156" class="hot2">风景<em class="hotlogo"></em>
+                            </a>
+                            <br/>
+                            <a href="http://www.digu.com/tags/hot/1007" class="hot2">美食<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/1023" class="hot2">插画<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/9491" class="hot2">漫画<em class="hotlogo"></em>
+                            </a>
+                            <br/>
+                            <a href="http://www.digu.com/tags/hot/1906" class="hot2">玫瑰<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/65837" class="hot2">下午茶<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/1028" class="hot2">婚纱<em class="hotlogo"></em>
+                           </a>
+                           <br/>
+                            <a href="http://www.digu.com/tags/hot/7418" class="hot2">古装<em class="hotlogo"></em>
+                            </a>
+                            <a href="http://www.digu.com/tags/hot/5380" class="hot2">古风<em class="hotlogo"></em>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/tewdajbrtnzdaja" target="blank" class="link">
+                        <img class="img-main" src="images/img1-2.gif"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">其实贝壳是这样游泳的</p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%90%9E%E7%AC%91" class="common">搞笑</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">216 转收&nbsp;&nbsp;</span>
+                            <span class="likes">37 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/19874772r" target="blank" class="block1">
+                            <img class="user" src="images/convo121.jpg"/>ine77
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twwdok1rtwyde" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo122.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            搞笑图片
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/texpjk1utnzdjk6" class="link">
+                        <img class="img-main" src="images/img1-3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">插画 动漫 古风 秦时明月（墨家）雪女 原创人 程小勺</p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E5%BD%B1%E8%A7%86" class="common">影视</a>
+                            <a href="http://www.digu.com/tag/%E6%89%8B%E7%BB%98" class="common">手绘</a>
+                            <a href="http://www.digu.com/tag/%E5%94%AF%E7%BE%8E" class="common">唯美</a>
+                            <a href="http://www.digu.com/tag/%E5%8F%91%E5%9E%8B" class="common">发型</a>
+                            <a href="http://www.digu.com/tag/%E9%95%BF%E5%8F%91" class="common">长发</a>
+                            <a href="http://www.digu.com/tag/%E6%8F%92%E7%94%BB%E6%89%8B%E7%BB%98" class="common">插画手绘</a>
+                            <a href="http://www.digu.com/tag/%E7%BE%8E%E5%A5%B3/%E5%B8%85%E5%93%A5" class="common">美女/帅哥</a>
+                            <a href="http://www.digu.com/tag/%E5%BD%B1%E8%A7%86%E5%8A%A8%E6%BC%AB" class="common">影视动漫</a>
+                            <a href="http://www.digu.com/tag/%E6%96%87%E5%8C%96%E8%89%BA%E6%9C%AF" class="common">文化艺术</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">1 转收&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/SMLN0088" target="blank" class="block1">
+                            <img class="user" src="images/convo131.jpg"/>YY分享好心情
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twzdsjbxt6zdo" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo132.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            秦时明月
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-left">
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/tewdoj1pt2zdska" target="blank">
+                        <img src="images/img1.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">金毛</p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E5%AE%A0%E7%89%A9" class="common">宠物</a>
+                            <a href="http://www.digu.com/tag/%E9%87%91%E6%AF%9B" class="common">金毛</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">391 转收&nbsp;&nbsp;</span>
+                            <span class="likes">76 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/hill" target="blank" class="block1">
+                            <img class="user" src="images/convo1.jpg"/>抹不去的印记
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twydjkxotwwdo" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo2.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            可爱猫狗~~
+                        </a>
+                    </div>
+                </div>  
+                <div class="watefall">
+                    <div class="pin" id="pin2-2">
+                        <a href="http://www.digu.com/pin/5eyp6kxwta2ds" class="link">
+                        <img class="img-main" src="images/img2-2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%89%8B%E5%B7%A5DIY" class="common">手工DIY</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">45 转收&nbsp;&nbsp;</span>
+                            <span class="likes">2 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/lxydwei" target="blank" class="block1">
+                            <img class="user" src="images/convo221.jpg"/>零下一度维
+                        </a>
+                        <a href="http://www.digu.com/board/detail/tqwpjlhnt6xpl" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo222.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            旧物改造
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin" id="pin2-3">
+                        <a href="http://www.digu.com/pin/t6ypejhxtnypj" class="link">
+                        <img class="img-main" src="images/img2-3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%8A%98%E7%BA%B8" class="common">折纸</a>
+                            <a href="http://www.digu.com/tag/%E6%89%8B%E5%B7%A5DIY" class="common">手工DIY</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">3400 转收&nbsp;&nbsp;</span>
+                            <span class="likes">215 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/Shu_Qi" target="blank" class="block1">
+                            <img class="user" src="images/convo231.jpg"/>Previosly
+                        </a>
+                        <a href="http://www.digu.com/board/detail/tjxdnkbnt2yde" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo232.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            心灵手巧DIY
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-left">
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/texpljhqtjydlka" target="blank">
+                        <img src="images/img2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">
+                        White Deer by TheRafa on deviantART
+                        </p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1" class="common">平面设计</a>
+                            <a href="http://www.digu.com/tag/%E5%B9%B3%E9%9D%A2" class="common">平面</a>
+                            <a href="http://www.digu.com/tag/%E8%AE%BE%E8%AE%A1" class="common">设计</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">1 转收&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/34328430r" target="blank" class="block1">
+                            <img class="user" src="images/convo311.jpg"/>34328430r
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twzdskbntjxps" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo312.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            美文美图
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin" id="pin3-2">
+                        <a href="http://www.digu.com/pin/texp6kbn5expakn" target="blank">
+                        <img  src="images/img3-2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">
+                        我想有一个人能和我一起走到人生的尽头
+                        </p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%81%8B%E7%89%A9" class="common">恋物</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">3 转收&nbsp;&nbsp;</span>
+                            <span class="likes">1 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/yu_san" target="blank" class="block1">
+                            <img class="user" src="images/convo321.jpg"/>s 小懒
+                        </a>
+                        <a href="http://www.digu.com/board/detail/tezdakhrtjwdB" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo322.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            小丫。。。
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin" id="pin3-3">
+                        <a href="http://www.digu.com/pin/5exdtjhute2pl" target="blank">
+                        <img  src="images/img3-3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">杀生丸
+                        </p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/cosplay" class="common">cosplay</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">24 转收&nbsp;&nbsp;</span>
+                            <span class="likes">3 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/98439660r" target="blank" class="block1">
+                            <img class="user" src="images/convo331.jpg"/>西雅创意空间
+                        </a>
+                        <a href="http://www.digu.com/board/detail/tnxpoj1wtn2ds" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo332.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            cosplay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-left">
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/texpljbrtwydskw" class="link">
+                        <img src="images/img41.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">看远山含笑，看花儿妩媚，心中，便满是通透和欢喜</p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E8%8A%B1" class="common">花</a>
+                            <a href="http://www.digu.com/tag/%E6%A4%8D%E7%89%A9/%E8%8A%B1%E5%8D%89" class="common">植物/花卉</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">9 转收&nbsp;&nbsp;</span>
+                            <span class="likes">2 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/17396564r" target="blank" class="block1">
+                            <img class="user" src="images/convo411.jpg"/>浅月琉璃
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twypnlhqt2zpj" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo412.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            陌上花开，不染秋凉
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/tewp6kxxtj2ptja" class="link">
+                        <img src="images/img4-2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%85%95%E6%96%AF" class="common">慕斯</a>
+                            <a href="http://www.digu.com/tag/%E4%B8%8B%E5%8D%88%E8%8C%B6" class="common">下午茶</a>
+                            <a href="http://www.digu.com/tag/%E7%94%9C%E5%93%81" class="common">甜品</a>
+                            <a href="http://www.digu.com/tag/%E7%BE%8E%E5%91%B3" class="common">美味</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">414 转收&nbsp;&nbsp;</span>
+                            <span class="likes">81 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/5619539r" target="blank" class="block1">
+                            <img class="user" src="images/convo421.jpg"/>清风已逝风未止
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twydtkbotjwdB" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo422.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            慕斯
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall">
+                    <div class="pin" id="pin4-3">
+                        <a href="http://www.digu.com/pin/5eydojxotjzpt" class="link">
+                        <img src="images/img4-3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%91%84%E5%BD%B1" class="common">摄影</a>
+                            <a href="http://www.digu.com/tag/%E6%A8%B1%E8%8A%B1" class="common">樱花</a>
+                            <a href="http://www.digu.com/tag/%E6%97%85%E8%A1%8C%E9%A3%8E%E6%99%AF" class="common">旅行风景</a>
+                            <a href="http://www.digu.com/tag/%E6%A4%8D%E7%89%A9%E8%8A%B1%E5%8D%89" class="common">植物花卉</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">111 转收&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/ZIYI88888" target="blank" class="block1">
+                            <img class="user" src="images/convo431.jpg"/>忘忧草1178
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twydnk1otnxpo" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo432.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            樱桃梅李斗争春……
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="watefall" class="watefall-right">
+                    <div class="pin" id="pin5-1">
+                        <a href="http://www.digu.com/pin/texpljho5eydajn" target="blank" class="link">
+                        <img src="images/img5-1.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="description">国宝级瓷器</p>
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%96%87%E7%89%A9" class="common">文物</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">3 转收&nbsp;&nbsp;</span>
+                            <span class="likes">1 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/ddlao" target="blank" class="block1">
+                            <img class="user" src="images/convo511.jpg"/>豆佬7
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twwdnjxotqxdt" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo512.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            官窑瓷器
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall" class="watefall-right">
+                    <div class="pin" id="pin5-1">
+                        <a href="http://www.digu.com/pin/texpjjxp5awdokn" target="blank" class="link">
+                        <img src="images/img5-2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E7%AB%A5%E7%9C%9F" class="common">童真</a>
+                            <a href="http://www.digu.com/tag/%E7%94%B7%E5%AD%A9" class="common">男孩</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">31 转收&nbsp;&nbsp;</span>
+                            <span class="likes">6 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/xiaoli1833" target="blank" class="block1">
+                            <img class="user" src="images/convo521.jpg"/>飞落雪
+                        </a>
+                        <a href="http://www.digu.com/board/detail/tq2d6j1pta2da" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo522.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            宝贝
+                        </a>
+                    </div>
+                </div>
+                <div class="watefall" class="watefall-right">
+                    <div class="pin">
+                        <a href="http://www.digu.com/pin/tewpnlbutjypnja" target="blank" class="link">
+                        <img src="images/img5-3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="stats">
+                            <a href="http://www.digu.com/tag/%E6%96%87%E7%89%A9" class="common">建筑</a>
+                            <a href="http://www.digu.com/tag/%E6%96%87%E7%89%A9" class="common">风景</a>
+                            <a href="http://www.digu.com/tag/%E6%96%87%E7%89%A9" class="common">巴黎</a>
+                            <a href="http://www.digu.com/tag/%E6%96%87%E7%89%A9" class="common">铁塔</a>
+                        </p>
+                        <p class="colorless">
+                            <span class="repins">275 转收&nbsp;&nbsp;</span>
+                            <span class="likes">35 喜欢&nbsp;&nbsp;</span>
+                        </p>
+                    </div>
+                    <div class="convo">
+                        <a href="http://www.digu.com/5298" target="blank" class="block1">
+                            <img class="user" src="images/convo531.jpg"/>你的微笑s
+                        </a>
+                        <a href="http://www.digu.com/board/detail/twypalhqtqxpe" target="blank" class="block2">
+                            <span class="imglink">
+                                <img class="album" src="images/convo532.jpg"/>
+                            </span>
+                            <span class="select">收集在</span>
+                            <br/>
+                            铁塔风情
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="loading">
+                <img src="images/loading_dta.gif"/>
+            </div>
+            <div class="wrap">
+                <a href="http://www.digu.com/sequare/hot?vpageId=1" id="current">1</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=2">2</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=3">3</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=4">4</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=5">5</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=6">6</a>
+                ...
+                <a href="http://www.digu.com/sequare/hot?vpageId=1008">1008</a>
+                <a href="http://www.digu.com/sequare/hot?vpageId=2" class="next" title="下一页">&nbsp;</a>
+            </div>
+    	</div>
+    	<div class="footer">
+            <div class="others">
+                <ul class="others-in">
+                    <li>
+                        <span>关于我们</span>
+                        <br/>
+                        <a href="http://digu.com/sys/about" target="blank">关于嘀咕</a>
+                        <br/>
+                        <a href="http://www.digu.com/sys/about#around" target="blank">版权申请</a>
+                        <br/>
+                        <a href="http://www.digu.com/sys/about#contact" target="blank">联系我们</a>
+                        <br/>
+                    </li>
+                    <li>
+                        <a href="http://www.digu.com/all" target="blank" class="ex">发现精彩<br/></a>
+                        <a href="http://www.digu.com/sequare/hot" class="o1">人气收集</a>
+                        <br/>
+                        <a href="http://www.digu.com/sequare/newest" class="o1">最近收集</a>
+                        <br/>
+                        <a href="http://www.digu.com/topList/like" class="o1">排行榜</a>
+                        <br/>
+                    </li>
+                    <li>
+                        <span class="o1">人气</span>
+                        <br/>
+                        <a href="http://www.digu.com/hotBoards" target="blank">热门照片墙</a>
+                        <br/>
+                        <a href="http://www.digu.com/hall/frame" target="blank">达人堂</a>
+                        <br/>
+                        <a href="http://www.digu.com/group" target="blank">小组</a>
+                        <br/>
+                    </li>
+                    <li>
+                        <span class="o1">搜素</span>
+                        <br/>
+                        <a href="http://www.digu.com/keywords_hotkey" target="blank">热搜关键字</a>
+                        <br/>
+                        <a href="http://www.digu.com/keywords" target="blank">热门关键字</a>
+                        <br/>
+                        <a href="http://www.digu.com/index target="blank"" target="blank">索引</a>
+                        <br/>
+                    </li>
+                    <li>
+                        <span class="o1">更多</span>
+                        <br/>
+                        <a href="http://www.digu.com/cooperater" target="blank">友情链接</a>
+                        <br/>
+                        <a href="http://www.digu.com/group/rule" target="blank">使用协议</a>
+                        <br/>
+                        <a href="http://www.digu.com/help" target="blank">收集工具</a>
+                        <br/>
+                    </li>
+                    <li>
+                        <span class="o1">关注我们</span>
+                        <br/>
+                        <a href="http://user.qzone.qq.com/543192589" target="blank">
+                            <em class="qzone">&nbsp;</em>
+                            QQ空间
+                        </a>
+                        <br/>
+                        <a href="http://weibo.com/digu" target="blank">
+                            <em class="sina">&nbsp;</em>
+                            新浪微博
+                        </a>
+                        <br/>
+                        <a href="http://e.t.qq.com/digukefu" target="blank">
+                            <em class="tqq">&nbsp;</em>
+                            腾讯微博
+                        </a>
+                    </li>
+                    <li style="width:72px">
+                        <img  style="margin-top:3px" src="images/wenxin.jpg"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="last">
+                <img src="images/foot1.png"/>
+                2012 
+                <a href="http://www.digu.com/">嘀咕</a>
+                <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=6HhRJ1CcqL2JyGSPCBhc1zSy0X0wH0nBGDknTzbBjfX7JgR1dT1k!-1962366912">粤ICP备10105102号</a> 
+                <a href="http://assets.digu365.com/images/yww.jpg">粤网文[2010]0410-008号</a> 
+                <a href="http://assets.digu365.com/images/digu_tech.jpg">地图资质 乙测资字44102055</a>  
+                <img src="images/foot2.png"/>
+            </div>
+        </div>
+        <script type="text/javascript" src="script/javascript.js"></script>
+    </body>
+</html>
